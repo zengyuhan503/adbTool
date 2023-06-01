@@ -1,0 +1,130 @@
+.appContent {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+
+  .pageContainer {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.20);
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+    position: relative;
+    overflow: auto;
+
+    .action-container {
+      .action-title {
+        border-block-start: 0 #ffffff;
+
+        .ant-divider-inner-text {
+          color: #ffffff;
+        }
+      }
+
+      .action-items {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .action-item {
+          margin: 17px;
+
+          .action-item-image {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            border-radius: 16%;
+            background: rgba(255, 234, 51, 0.1);
+            cursor: pointer;
+
+            &:hover {
+              background: rgba(253, 253, 253, 0.5);
+
+              p {
+                color: #ffffff;
+              }
+            }
+
+            img {
+              width: 32px;
+              height: 32px;
+            }
+
+            p {
+              text-align: center;
+              margin-top: 12px;
+              color: #ffffff;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+
+    .page-log {
+      width: 100%;
+      height: 200px;
+      background: #ffffff;
+      border-radius: 10px 10px 0 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      .page-log-header {
+        height: 40px;
+        border-bottom: 2px solid #262b34;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 20px;
+        align-items: center;
+
+        &>span {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          border: 1px solid #262b34;
+          border-radius: 7px;
+          margin-left: 20px;
+          line-height: 30px;
+          text-align: center;
+          cursor: pointer;
+
+          .anticon {
+            color: #262b34;
+            font-size: 20px;
+          }
+
+          &:hover {
+            background: #262b34;
+
+            .anticon {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ortherOptions{
+  padding: 15px;
+  position: relative;
+  height: 140px;
+  &>span{
+    position: absolute;
+    right: 20px;
+    bottom: 12px;
+    color: #FF5722;
+    font-size: 19px;
+    z-index: 1;
+  }
+}
+/*
+
+*/

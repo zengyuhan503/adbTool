@@ -1,0 +1,37 @@
+.app-sider{
+    padding: 20px 0;
+    .sider-items{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        flex-direction: column;
+        .sider-item{
+            &>span{
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 48px;
+                height: 48px;
+                margin-top: 20px;
+                .anticon{
+                    font-size: 21px;
+                    color: #ffffff;
+                }
+                &.active-item{
+                    background: rgb(255 234 51 / 10%);
+                    border-radius: 30%;
+                    .anticon{
+                        font-size: 21px;
+                        color: #ffea33;
+                        font-weight: 600;
+                    }
+                }
+                &:hover{
+                    background: rgb(255 234 51 / 10%);
+                    border-radius: 30%;
+                }
+            }
+        }
+    }
+}
